@@ -38,28 +38,28 @@
         <td onclick="get_value(7)">7</td>
         <td onclick="get_value(8)">8</td>
         <td onclick="get_value(9)">9</td>
-        <td onclick="">/</td>
-        <td onclick="">%</td>
+        <td onclick="get_operation('/')">/</td>
+        <td onclick="get_operation('%')">%</td>
     </tr>
     <tr>
         <td onclick="get_value(4)">4</td>
         <td onclick="get_value(5)">5</td>
         <td onclick="get_value(6)">6</td>
-        <td onclick="operation('*')">*</td>
-        <td onclick="clickNum(this)">¼</td>
+        <td onclick="get_operation('*')">*</td>
+        <td onclick="get_operation('¼')">¼</td>
     </tr>
     <tr>
         <td onclick="get_value(1)">1</td>
         <td onclick="get_value(2)">2</td>
         <td onclick="get_value(3)">3</td>
-        <td >-</td>
+        <td onclick="get_operation('-')">-</td>
         <td rowspan="2" style="font-size: 30px;" onclick="equals()">=</td>
     </tr>
 
     <tr>
         <td onclick="get_value(0)" colspan="2">0</td>
-        <td onclick="clickNum(this)">.</td>
-        <td onclick="clickNum(this)">+</td>
+        <td onclick="get_value('.')">.</td>
+        <td onclick="get_operation('+')">+</td>
     </tr>
 
 
