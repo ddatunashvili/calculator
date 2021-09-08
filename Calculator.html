@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="calculator.js"></script>
     <link rel="stylesheet" href="calculator.css">
 
 </head>
@@ -29,36 +28,36 @@
     </tr>
     <tr>
         <td id="delLast">←</td>
-        <td onclick="click0(this)">CE</td>
+        <td onclick='document.querySelector("#capscreen").innerHTML="0"'>CE</td>
         <td onclick="click0(this)">C</td>
         <td>±</td>
         <td>√</td>
     </tr>
 
     <tr>
-        <td onclick="clickNum(this)">7</td>
-        <td onclick="clickNum(this)">8</td>
-        <td onclick="clickNum(this)">9</td>
-        <td onclick="clickNum(this)">/</td>
-        <td onclick="clickNum(this)">%</td>
+        <td onclick="get_value(7)">7</td>
+        <td onclick="get_value(8)">8</td>
+        <td onclick="get_value(9)">9</td>
+        <td onclick="">/</td>
+        <td onclick="">%</td>
     </tr>
     <tr>
-        <td onclick="clickNum(this)">4</td>
-        <td onclick="clickNum(this)">5</td>
-        <td onclick="clickNum(this)">6</td>
-        <td onclick="clickNum(this)">*</td>
+        <td onclick="get_value(4)">4</td>
+        <td onclick="get_value(5)">5</td>
+        <td onclick="get_value(6)">6</td>
+        <td onclick="operation('*')">*</td>
         <td onclick="clickNum(this)">¼</td>
     </tr>
     <tr>
-        <td onclick="clickNum(this)">1</td>
-        <td onclick="clickNum(this)">2</td>
-        <td onclick="clickNum(this)">3</td>
-        <td onclick="clickNum(this)">-</td>
-        <td rowspan="2" style="font-size: 30px;" onclick="clickSum(this)">=</td>
+        <td onclick="get_value(1)">1</td>
+        <td onclick="get_value(2)">2</td>
+        <td onclick="get_value(3)">3</td>
+        <td >-</td>
+        <td rowspan="2" style="font-size: 30px;" onclick="equals()">=</td>
     </tr>
 
     <tr>
-        <td onclick="clickNum(this)" colspan="2">0</td>
+        <td onclick="get_value(0)" colspan="2">0</td>
         <td onclick="clickNum(this)">.</td>
         <td onclick="clickNum(this)">+</td>
     </tr>
@@ -67,6 +66,7 @@
   </table>
 
 
+  <script src="script.js"></script>
 
 </body>
 </html>

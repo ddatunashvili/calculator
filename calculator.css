@@ -28,4 +28,9 @@ td{
     margin: 20px;
     text-align: center;
     background-color:rgb(230, 230, 230);
+    cursor: pointer;
+}
+td:hover{
+    color:black;
+    background-color:yellow;
 }
